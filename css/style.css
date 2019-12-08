@@ -52,13 +52,16 @@
   font-weight: 600;
   text-decoration: underline;
 }
-* body .bodyText > p {
+* body .bodyText {
+  border-bottom: 2px solid lightgray;
+}
+* body .bodyText p {
   color: #fff;
 }
-* body .bodyText > p span {
+* body .bodyText p span {
   display: block;
   width: fit-content;
-  margin: 5px 0px;
+  margin-top: 5px;
   padding: 2px 10px;
   background: #476;
 }

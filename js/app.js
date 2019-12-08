@@ -31,12 +31,15 @@ function decorateBodyText(elem) {
     }
     var text = arrStr.slice(l, end).join(" ");
 
-    bodyText +=
-      "<span class='" +
-      textStyleClass[getRandomInt(0, 3)] +
-      "'>" +
-      text +
-      "</span>";
+    var style = "";
+
+    if (text.length > 23) {
+      style = "text-3";
+    } else {
+      style = textStyleClass[getRandomInt(0, 3)];
+    }
+
+    bodyText += "<span class='" + style + "'>" + text + "</span>";
 
     console.log(text);
 

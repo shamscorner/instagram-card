@@ -62,15 +62,18 @@
       }
     }
 
-    .bodyText > p {
-      color: $col-text-hero;
+    .bodyText {
+      border-bottom: 2px solid lightgray;
+      p {
+        color: $col-text-hero;
 
-      span {
-        display: block;
-        width: fit-content;
-        margin: 5px 0px;
-        padding: 2px 10px;
-        background: $bg-text-hero;
+        span {
+          display: block;
+          width: fit-content;
+          margin-top: 5px;
+          padding: 2px 10px;
+          background: $bg-text-hero;
+        }
       }
     }
 
