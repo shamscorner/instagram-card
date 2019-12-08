@@ -1,0 +1,103 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  body {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: $bg-body;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+
+    .container {
+      background-color: $bg-card;
+      padding: 30px 5px 30px 30px;
+      width: $container-width;
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        .theory {
+          color: $bg-text-hero;
+          font-weight: 700;
+
+          p {
+            font-size: 1.2rem;
+          }
+
+          h1 {
+            margin-top: -8px;
+            font-size: 3rem;
+            border-bottom: 6px solid $bg-text-hero;
+            margin-bottom: 8px;
+          }
+        }
+
+        .logoSection {
+          height: 160px;
+          margin-top: -30px;
+        }
+      }
+
+      .footer {
+        margin-top: 20px;
+        color: $bg-text-hero;
+        padding: 5px;
+        font-weight: 600;
+
+        .author {
+          font-size: $author-text-size;
+          font-weight: $auhor-text-weight;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .bodyText > p {
+      color: $col-text-hero;
+
+      span {
+        display: block;
+        width: fit-content;
+        margin: 5px 0px;
+        padding: 2px 10px;
+        background: $bg-text-hero;
+      }
+    }
+
+    .text-1 {
+      font-size: $sz-text-1;
+      font-weight: $wt-text-1;
+    }
+
+    .text-2 {
+      font-size: $sz-text-2;
+      font-weight: $wt-text-2;
+    }
+
+    .text-3 {
+      font-size: $sz-text-3;
+      font-weight: $wt-text-3;
+    }
+    .text-4 {
+      font-size: $sz-text-4;
+      font-weight: $wt-text-4;
+    }
+  }
+}
+
+.vertical-separator {
+  width: 1px;
+  height: 80px;
+  background: lightgray;
+  padding-left: 2px;
+}
