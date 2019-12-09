@@ -8,7 +8,7 @@ window.onload = function() {
   // set the card font color
   document.getElementById("theory").style.color = gradientFirstColor;
   document.getElementById("theory-number").style.borderBottom =
-    "6px solid " + gradientFirstColor;
+    "20px solid " + gradientFirstColor;
   // set the card footer color
   document.getElementById("footer").style.color = gradientFirstColor;
   // set the background of the body text

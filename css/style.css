@@ -4,20 +4,15 @@
   box-sizing: border-box;
 }
 * body {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: #fafafa;
-  padding: 50px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: #ec5454;
   font-family: "Open Sans", sans-serif;
+  padding: 50px;
 }
 * body .container {
   background-color: #ffffff;
-  padding: 30px 5px 30px 30px;
-  width: 600px;
+  padding: 50px 10px 50px 130px;
+  width: 1800px;
+  height: 1800px;
 }
 * body .container .header {
   display: flex;
@@ -28,26 +23,27 @@
   font-weight: 700;
 }
 * body .container .header #theory p {
-  font-size: 1.2rem;
+  font-size: 3.5rem;
 }
 * body .container .header #theory h1 {
-  margin-top: -8px;
-  font-size: 3rem;
+  margin-top: -35px;
+  font-size: 10.5rem;
   /* border-bottom: 6px solid $bg-text-hero; */
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 * body .container .header .logoSection {
-  height: 160px;
-  margin-top: -30px;
+  height: 560px;
+  margin-top: -20px;
 }
 * body .container #footer {
-  margin-top: 20px;
+  margin-top: 40px;
   /* color: $bg-text-hero; */
   padding: 5px;
+  font-size: 3rem;
   font-weight: 600;
 }
 * body .container #footer .author {
-  font-size: 1.5rem;
+  font-size: 4rem;
   font-weight: 600;
   text-decoration: underline;
 }
@@ -60,33 +56,38 @@
 * body .bodyText p span {
   display: block;
   width: fit-content;
-  margin-top: 5px;
+  margin-top: 15px;
   padding: 2px 10px;
   color: white;
   /* background: $bg-text-hero; */
 }
 * body .text-1 {
-  font-size: 2.5rem;
+  font-size: 8.5rem;
   font-weight: 600;
 }
 * body .text-2 {
-  font-size: 2rem;
+  font-size: 6.25rem;
   font-weight: 600;
 }
 * body .text-3 {
-  font-size: 1.5rem;
+  font-size: 5.75rem;
   font-weight: 600;
 }
 * body .text-4 {
-  font-size: 1.25rem;
+  font-size: 7rem;
   font-weight: 600;
 }
 
 .vertical-separator {
-  width: 1px;
-  height: 80px;
+  width: 5px;
+  height: 300px;
   background: lightgray;
   padding-left: 2px;
+  margin-top: 10px;
+}
+
+.horizontal-divider {
+  background: red;
 }
 
 /*# sourceMappingURL=style.css.map */
