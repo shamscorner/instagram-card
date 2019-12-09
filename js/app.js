@@ -1,8 +1,21 @@
+var gradientFirstColor = "";
+
 window.onload = function() {
   // decorate the text
   decorateBodyText(document.getElementById("bodyText"));
   // set the gradient background of the logo
   changeGradientColorLogo(document.getElementById("logo"));
+  // set the card font color
+  document.getElementById("theory").style.color = gradientFirstColor;
+  document.getElementById("theory-number").style.borderBottom =
+    "6px solid " + gradientFirstColor;
+  // set the card footer color
+  document.getElementById("footer").style.color = gradientFirstColor;
+  // set the background of the body text
+  var spanTag = document.getElementById("bodyText").children;
+  for (var i = 0; i < spanTag.length; i++) {
+    spanTag[i].style.background = gradientFirstColor;
+  }
 };
 
 function changeGradientColorLogo(elem) {
@@ -11,13 +24,13 @@ function changeGradientColorLogo(elem) {
 
 function decorateBodyText(elem) {
   var str = elem.textContent.trim();
-  console.log(str);
+  //console.log(str);
 
   arrStr = str.split(" ");
-  console.log(arrStr);
+  //console.log(arrStr);
 
   arrStrLen = arrStr.length;
-  console.log(arrStrLen);
+  //console.log(arrStrLen);
 
   var bodyText = "";
 
@@ -41,7 +54,7 @@ function decorateBodyText(elem) {
 
     bodyText += "<span class='" + style + "'>" + text + "</span>";
 
-    console.log(text);
+    //console.log(text);
 
     l = end;
   }
@@ -131,8 +144,11 @@ function generate(numberOfColor) {
     hexValEnd = hexValEnd + s[getRandomInt(0, 15)];
   }
 
+  //console.log(hexValStart);
+
+  gradientFirstColor = hexValEnd;
+
   return generateColor(hexValStart, hexValEnd, numberOfColor);
 
   //var tmp = generateColor(hexValStart, hexValEnd, 10);
-  //console.log(tmp);
 }
