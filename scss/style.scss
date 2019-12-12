@@ -11,6 +11,7 @@
     padding: 50px;
 
     .container {
+      position: relative;
       background-color: $bg-card;
       padding: 50px 10px 50px 130px;
       width: $container-width;
@@ -43,7 +44,10 @@
       }
 
       #footer {
-        margin-top: 40px;
+        position: absolute;
+        bottom: 70px;
+        left: 125px;
+        /* margin-top: 40px; */
         /* color: $bg-text-hero; */
         padding: 5px;
         font-size: 3rem;

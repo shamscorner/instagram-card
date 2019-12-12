@@ -9,6 +9,7 @@
   padding: 50px;
 }
 * body .container {
+  position: relative;
   background-color: #ffffff;
   padding: 50px 10px 50px 130px;
   width: 1800px;
@@ -36,7 +37,10 @@
   margin-top: -20px;
 }
 * body .container #footer {
-  margin-top: 40px;
+  position: absolute;
+  bottom: 70px;
+  left: 125px;
+  /* margin-top: 40px; */
   /* color: $bg-text-hero; */
   padding: 5px;
   font-size: 3rem;
