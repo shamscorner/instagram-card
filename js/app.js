@@ -19,6 +19,11 @@ window.onload = function() {
   }
   // set the border color
   bodyTextElem.style.borderBottom = "6px solid" + gradientFirstColor;
+
+  // set the vertical color
+  document.getElementById(
+    "vertical-separator"
+  ).style.background = gradientFirstColor;
 };
 
 function changeGradientColorLogo(elem) {
