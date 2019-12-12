@@ -21,9 +21,8 @@ window.onload = function() {
   bodyTextElem.style.borderBottom = "6px solid" + gradientFirstColor;
 
   // set the vertical color
-  document.getElementById(
-    "vertical-separator"
-  ).style.background = gradientFirstColor;
+  document.getElementById("sticky-bottom-container").style.borderLeft =
+    "6px solid" + gradientFirstColor;
 };
 
 function changeGradientColorLogo(elem) {

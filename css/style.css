@@ -15,6 +15,13 @@
   width: 1800px;
   height: 1800px;
 }
+* body .container .logoSection {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  height: 560px;
+  margin-top: -20px;
+}
 * body .container .header {
   display: flex;
   justify-content: space-between;
@@ -29,19 +36,27 @@
 * body .container .header #theory h1 {
   margin-top: -35px;
   font-size: 10.5rem;
-  /* border-bottom: 6px solid $bg-text-hero; */
   margin-bottom: 20px;
 }
-* body .container .header .logoSection {
-  height: 560px;
-  margin-top: -20px;
+* body .container #sticky-bottom-container {
+  position: relative;
+  height: 1100px;
+}
+* body .container #sticky-bottom-container .sticky-bottom-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+* body .container #sticky-bottom-container .sticky-bottom-text .bodyText p span {
+  display: block;
+  width: fit-content;
+  margin-top: 15px;
+  padding: 2px 10px;
+  color: white;
 }
 * body .container #footer {
-  position: absolute;
-  bottom: 70px;
-  left: 125px;
-  /* margin-top: 40px; */
-  /* color: $bg-text-hero; */
+  margin-top: 50px;
   padding: 5px;
   font-size: 3rem;
   font-weight: 600;
@@ -50,17 +65,6 @@
   font-size: 4rem;
   font-weight: 600;
   text-decoration: underline;
-}
-* body .bodyText p {
-  /* color: $col-text-hero; */
-}
-* body .bodyText p span {
-  display: block;
-  width: fit-content;
-  margin-top: 15px;
-  padding: 2px 10px;
-  color: white;
-  /* background: $bg-text-hero; */
 }
 * body .text-1 {
   font-size: 8.5rem;
