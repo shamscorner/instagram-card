@@ -12,10 +12,13 @@ window.onload = function() {
   // set the card footer color
   document.getElementById("footer").style.color = gradientFirstColor;
   // set the background of the body text
-  var spanTag = document.getElementById("bodyText").children;
+  var bodyTextElem = document.getElementById("bodyText");
+  var spanTag = bodyTextElem.children;
   for (var i = 0; i < spanTag.length; i++) {
     spanTag[i].style.background = gradientFirstColor;
   }
+  // set the border color
+  bodyTextElem.style.borderBottom = "6px solid" + gradientFirstColor;
 };
 
 function changeGradientColorLogo(elem) {
